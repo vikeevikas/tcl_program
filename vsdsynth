@@ -1,0 +1,21 @@
+#!/bin/tcsh -f
+echo ""
+echo "################################"
+echo "##		      	    ##"
+echo "## vv        vv   kk  kkk     ##"
+echo "##  vv      vv    kk kk       ##"
+echo "##   vv    vv     kkk         ##"
+echo "##    vv vv       kkk         ##"
+echo "##     vvvv       kk kk       ##"
+echo "##      vv        kk  kkk     ##"
+echo "##                            ##"
+echo "################################"
+echo ""
+echo ""
+
+set my_work_dir = 'pwd'
+
+if( $#argv != 1) then
+	echo "Info: Please provide the csv file"
+	exit 1
+endif
