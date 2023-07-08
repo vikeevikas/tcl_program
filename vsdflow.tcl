@@ -115,18 +115,24 @@ set number_of_columns [constraints columns]
 puts "Constraints File number of rows = $number_of_rows"
 puts "Constraints File number of columns = $number_of_columns"
 
-return
-
 #-----check row number for "clocks" and column number for "IO delays and slew section" in constraints.csv---##
 set clock_start [lindex [lindex [constraints search all CLOCKS] 0 ] 1]
+puts "Constraints File : clock_start = $clock_start"
+
 set clock_start_column [lindex [lindex [constraints search all CLOCKS] 0 ] 0]
+puts "Constraints File : clock_start_column = $clock_start_column"
+
 set clock_period [constraints get cell [expr {$clock_start+1}] [expr {$clock_start_column+1}]]
 
 #-----check row number for "inputs" section in constraints.csv---##
 set input_ports_start [lindex [lindex [constraints search all INPUTS] 0 ] 1]
+puts "Constraints File : input_ports_start = $input_ports_start"
 
 #-----check row number for "outputs" section in constraints.csv---##
 set output_ports_start [lindex [lindex [constraints search all OUTPUTS] 0 ] 1]
+puts "Constraints File : output_ports_start = $output_ports_start"
+
+return 
 
 #-------------------clock constraints--------------------##
 #-------------------clock latency constraints------------#
