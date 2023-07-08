@@ -132,7 +132,6 @@ puts "Constraints File : input_ports_start = $input_ports_start"
 set output_ports_start [lindex [lindex [constraints search all OUTPUTS] 0 ] 1]
 puts "Constraints File : output_ports_start = $output_ports_start"
 
-return 
 
 #-------------------clock constraints--------------------##
 #-------------------clock latency constraints------------#
