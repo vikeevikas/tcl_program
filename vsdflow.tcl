@@ -256,7 +256,7 @@ set tmp_file [open ./temp/1 w]
 
 foreach f $netlist {
         set fd [open $f]
-	puts "Reding file : $f"
+	#puts "Reding file : $f"
         while {[gets $fd line] != -1} {
 		set pattern1 " [constraints get cell 0 $i];"
                 if {[regexp -all -- $pattern1 $line]} {
@@ -297,9 +297,9 @@ set count [split [llength [read $tmp2_file]] " "]
         puts -nonewline $sdc_file "\nset_input_transition -clock  [constraints get cell $related_clock $i] -max -rise  [constraints get cell $input_late_rise_slew_start $i] \[get_ports $inp_ports\]"
         puts -nonewline $sdc_file "\nset_input_transition -clock  [constraints get cell $related_clock $i] -max -fall  [constraints get cell $input_late_fall_slew_start $i] \[get_ports $inp_ports\]"
 
-	puts "\n$$$$$$$$$$$$$$$$$$$$ Loop Count :: $i $$$$$$$$$$$$$$$$$$$$$$$"
+	#puts "\n$$$$$$$$$$$$$$$$$$$$ Loop Count :: $i $$$$$$$$$$$$$$$$$$$$$$$"
         set i [expr {$i+1}]
-	puts "\n"
+	#puts "\n"
 	
 #}
 
@@ -316,7 +316,6 @@ puts "\n"
 puts "\n###################################################################"
 puts "\n"
 
-return
 
 #------------------------------------------------------------------------------##
 #-------------------create output delay and load constraints--------------------##
@@ -332,15 +331,26 @@ set bussed_status [lindex [lindex [constraints search rect $clock_start_column $
 
 set i [expr {$output_ports_start+1}]
 set end_of_ports [expr {$number_of_rows}]
+
+puts "\n####### output_ports_start :: $output_ports_start"
+puts "\n####### end_of_ports :: $end_of_ports"
+
+puts "\n"
+puts "\n-------------------------------------------------------------------"
 puts "\nInfo-SDC: Working on IO constraints....."
 puts "\nInfo-SDC: Categorizing output ports as bits and bussed"
+puts "\n-------------------------------------------------------------------"
+puts "\n"
+
+
 
 while { $i < $end_of_ports } {
 #--------------------------optional script----differentiating input ports as bussed and bits------#
 set netlist [glob -dir $NetlistDirectory *.v]
 set tmp_file [open ./temp/1 w]
-foreach f $netlist {
+foreach f $netlist {	
         set fd [open $f]
+	puts "\n Reading file : $f"  
         while {[gets $fd line] != -1} {
                 set pattern1 " [constraints get cell 0 $i];"
                 if {[regexp -all -- $pattern1 $line]} {
@@ -353,8 +363,8 @@ foreach f $netlist {
         }
 close $fd
 }
-
 close $tmp_file
+
 set tmp_file [open ./temp/1 r]
 set tmp2_file [open ./temp/2 w]
 puts -nonewline $tmp2_file "[join [lsort -unique [split [read $tmp_file] \n]] \n]"
@@ -362,25 +372,44 @@ close $tmp_file
 close $tmp2_file
 set tmp2_file [open ./temp/2 r]
 set count [split [llength [read $tmp2_file]]]
-set check_bussed [constraints get cell $bussed_status $i]
+#set check_bussed [constraints get cell $bussed_status $i]
+#if {$count > 2 || $check_bussed == "yes"} {
 
-if {$count > 2 || $check_bussed == "yes"} {
+if {$count > 2 } {
         set op_ports [concat [constraints get cell 0 $i]*]
 } else {
         set op_ports [constraints get cell 0 $i]
 }
+
         puts -nonewline $sdc_file "\nset_output_delay -clock  [constraints get cell $related_clock $i] -min -rise  [constraints get cell $output_early_rise_delay_start $i] \[get_ports $op_ports\]"
         puts -nonewline $sdc_file "\nset_output_delay -clock  [constraints get cell $related_clock $i] -min -fall  [constraints get cell $output_early_fall_delay_start $i] \[get_ports $op_ports\]"
         puts -nonewline $sdc_file "\nset_output_delay -clock  [constraints get cell $related_clock $i] -max -rise  [constraints get cell $output_late_rise_delay_start $i] \[get_ports $op_ports\]"
         puts -nonewline $sdc_file "\nset_output_delay -clock  [constraints get cell $related_clock $i] -max -fall  [constraints get cell $output_late_fall_delay_start $i] \[get_ports $op_ports\]"
 	puts -nonewline $sdc_file "\nset_load [constraints get cell $output_load_start $i] \[get_ports $op_ports\]"
 	set i [expr {$i+1}]
+	#puts "\n$$$$$$$$$$$$$$$$$$$$ Loop Count :: $i $$$$$$$$$$$$$$$$$$$$$$$"
+#}
 }
 close $tmp2_file
 close $sdc_file
 
+puts "\n"
+puts "\n-------------------------------------------------------------------" 
+puts "\nInfo-SDC: Output constraints Categorizing and Creation Done....."
+puts "\n-------------------------------------------------------------------" 
+puts "\n"
+puts "\n###################################################################"
+puts "\n"
+
+
 puts "\nInfo: SDC created. Please use constraints in path  $OutputDirectory/$DesignName.sdc"
-}
+
+puts "\n"
+puts "\n###################################################################"
+puts "\n"
+
+return
+
 #----------------------------------------------------------------------------#
 #-------------Hierarchy check and synthesis using yosys from qflow-----------#
 #----------------------------------------------------------------------------#
