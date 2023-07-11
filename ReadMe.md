@@ -70,23 +70,20 @@ From SDC file - Processing clock(clock latency and clock slew) and input/output 
 
 
 ------------------------------------------------------------------------
-Day 4: Complete Scripting and Yosys Synthesis Introduction
+4: Yosys Synthesis tool usage 
 ------------------------------------------------------------------------
 
-Section 7: Full script for download and Conclusion
-  Lecture 29: Constraints generation logic for the output port and Conclusion!!
-Section 8: Introduction to Yosys synthesis tool usage
-  Lecture 2: Example of a memory module RTL description
-  Lecture 3: Memory functionality and Synthesis using Yosys
-  Lecture 4: Components and Gate level netlist description of Synthesized memory
-  Lecture 5: Memory Write operation discussed in detail
-  Lecture 6: Memory Read operation and TCL scripting agenda
-Section 9: Hierarchy check and error handling script creation for Yosys
-  Lecture 7: Script to do a hierarchy check
-  Lecture 8: Demo for hierarchy check script generation
-  Lecture 9: Demo for error handling concept in hierarchy check
-  Lecture 10: Error handling script for hierarchy check
-  Lecture 11: Demo for error handling script
+Yosys synthesis tool usage and Memory functionality module RTL description, Hierarchy check and error handling.
+
+
+![Screenshot from 2023-07-09 16-53-10](https://github.com/vikeevikas/tcl_program/assets/3139438/ee7fc704-2e0b-4112-88e7-2f2ec4f36866)
+
+
+![Screenshot from 2023-07-09 18-15-43](https://github.com/vikeevikas/tcl_program/assets/3139438/6d514cae-fdf5-4a1a-97bd-fa7900dca692)
+
+
+![Screenshot from 2023-07-09 18-31-26](https://github.com/vikeevikas/tcl_program/assets/3139438/030cb189-0363-4629-8531-a689e6d9e500)
+
 
 ------------------------------------------------------------------------
 Day 5: Advanced Scripting Techniques and Quality of Results Generation
@@ -127,17 +124,3 @@ Section 16: Conclusion
 -----------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------
 
-Open Source Tools
-
-Yosys
-OpenTimer
-TCL development suite
-Libraries (associated with TCL)
-
--------------------------------------------------------
-
-Oracle VirtualBox
-
-VDI file https://forgefunder.com/~kunal/TCLWorkshop.vdi
-
---------------------------------------------------------------
