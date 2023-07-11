@@ -18,11 +18,15 @@ VSDSYNTH Toolbox usage scenarios, input CSV file, incorrect CSV and "-help" Impl
 
 ![000](https://github.com/vikeevikas/tcl_program/assets/3139438/c7cbc65d-c111-48c4-aa64-02684c713040)
 
+
 ![000](https://github.com/vikeevikas/tcl_program/assets/3139438/3ccb6588-0087-4b5f-a376-24ff3ea8a854)
+
 
 ![003](https://github.com/vikeevikas/tcl_program/assets/3139438/be40dea6-ada9-44b4-8792-49f10764dc72)
 
+
 ![004](https://github.com/vikeevikas/tcl_program/assets/3139438/ec6b3d57-64e7-41f2-a35e-80acc1d4630d)
+
 
 ![005](https://github.com/vikeevikas/tcl_program/assets/3139438/862beb03-81e5-4946-b0c8-baa3c6df9bb9)
 
@@ -30,21 +34,26 @@ VSDSYNTH Toolbox usage scenarios, input CSV file, incorrect CSV and "-help" Impl
 
 
 ------------------------------------------------------------------------
-Day 2: Variable Creation and Processing Constraints from CSV
+2: Variable Creation and Processing Constraints from CSV
 ------------------------------------------------------------------------
 
-Section 3: Sub-Task Two - From CSV to format[1] and SDC - Variable Creation
-  Lecture 5: Various tasks involved in format conversion
-  Lecture 7: Auto-Create variables using matrix and arrays
-  Lecture 8: Initialize variables for auto-creation variables task
-  Lecture 9: Auto creation of the first variable - DesignName
-  Lecture 10: Auto creation of variables complete
-  Lecture 11: Variable Creation DEMO using TCL
-Section 4: Sub-Task Two - From CSV to format[1] and SDC - Processing constraints, CSV
-  Lecture 12: Checking the existence of files and folders mentioned in design_details.csv
-  Lecture 13: Convert constraints.csv file to a matrix object
-  Lecture 14: Compute row number using complex matrix processing
-  Lecture 15: DEMO for computing row numbers
+From constraints CSV to format to Auto-Create Variable, SDC File Creation
+
+
+![006](https://github.com/vikeevikas/tcl_program/assets/3139438/97a503ea-acff-473c-a700-22e7cfca9a35)
+
+
+![007](https://github.com/vikeevikas/tcl_program/assets/3139438/88b9a628-e672-4354-b071-b46ec9b144ba)
+
+
+![008](https://github.com/vikeevikas/tcl_program/assets/3139438/57faa9c6-f873-4566-a294-31735b06c6a2)
+
+
+![008](https://github.com/vikeevikas/tcl_program/assets/3139438/d81e82cf-0f0f-42e1-8ab3-f16a81422180)
+
+
+![009](https://github.com/vikeevikas/tcl_program/assets/3139438/e2471387-5adc-436c-834c-9626bcf04113)
+
 
 ------------------------------------------------------------------------
 Day 3: Processing Clock and Input Constraints
