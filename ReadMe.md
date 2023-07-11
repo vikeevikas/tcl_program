@@ -32,7 +32,6 @@ VSDSYNTH Toolbox usage scenarios, input CSV file, incorrect CSV and "-help" Impl
 
 
 
-
 ------------------------------------------------------------------------
 2: Variable Creation and Processing Constraints from CSV
 ------------------------------------------------------------------------
@@ -56,24 +55,19 @@ From constraints CSV to format to Auto-Create Variable, SDC File Creation
 
 
 ------------------------------------------------------------------------
-Day 3: Processing Clock and Input Constraints
+3: Processing Clock and Input Constraints
 ------------------------------------------------------------------------
 
-Section 5: Sub-Task Two - From CSV to format[1] and SDC - Processing clock constraints
-  Lecture 16: Algorithm to identify the column number for clock latency constraints
-  Lecture 17: Start writing clock latency constraints in the SDC file
-  Lecture 18: Complete clock latency constraints and clock slew constraints in the SDC file
-  Lecture 19: Code to create clock constraints with clock period and duty cycle
-  Lecture 20: DEMO for creating complete clock constraints
-Section 6: Sub-Task Two - From CSV to format[1] and SDC - Processing input constraints
-  Lecture 21: Introduction to the task of differentiating between bits and a bus
-  Lecture 22: Algorithm to categorize input ports as bits and bussed
-  Lecture 23: File access and pattern creation steps
-  Lecture 24: Regular expression and regular substitute to get fixed space strings
-  Lecture 25: Demo for grepping input ports from all verilogs and reformatting for fixed space
-  Lecture 26: Read, split, uniquify, sort, and join input ports to remove duplication
-  Lecture 27: Evaluate the length of the string and Demo of bits/bussed differentiation script
-  Lecture 28: Demo for input constraints generation and bits/bussed differentiation
+From SDC file - Processing clock(clock latency and clock slew) and input/output  ports constraints for bits and a bus
+
+![010](https://github.com/vikeevikas/tcl_program/assets/3139438/b26ba2da-f2ea-4fd2-967c-277571d3efad)
+
+
+![011](https://github.com/vikeevikas/tcl_program/assets/3139438/f89d48da-9a65-415f-a492-77ffdf299893)
+
+
+![012](https://github.com/vikeevikas/tcl_program/assets/3139438/cdf6fe35-ccc7-43ba-974b-6f8c51107dc0)
+
 
 ------------------------------------------------------------------------
 Day 4: Complete Scripting and Yosys Synthesis Introduction
