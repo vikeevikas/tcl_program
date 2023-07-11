@@ -1,20 +1,33 @@
 
-TCL Workshop: From Introduction to Advanced Scripting Techniques in Design and Synthesis
+Advanced Scripting Techniques in Design and Synthesis using TCL
 --------------------------------------------------------------------------------------------
-https://www.vlsisystemdesign.com/tclworkshop/
-------------------------------------------------------------------------
+
+Open Source Tools Used:-
+Yosys
+OpenTimer
+TCL development suite
+Libraries (associated with TCL)
 
 
 ------------------------------------------------------------------------
-Day 1: Introduction to TCL and VSDSYNTH Toolbox Usage
+1: TCL and VSDSYNTH Toolbox Usage
 ------------------------------------------------------------------------
 
-Section 1: Introduction
-  Lecture 1: Introduction to TCL task
-  Lecture 2: Introduction to sub-task
-Section 2: Sub-Task One: VSDSYNTH Toolbox usage scenarios
-  Lecture 3: Scenario 1 - User doesn't provide an input CSV file
-  Lecture 4: Scenarios 2 & 3 - User providing incorrect CSV or typing "-help"
+VSDSYNTH Toolbox usage scenarios, input CSV file, incorrect CSV and "-help" Implimentation
+
+
+![000](https://github.com/vikeevikas/tcl_program/assets/3139438/c7cbc65d-c111-48c4-aa64-02684c713040)
+
+![000](https://github.com/vikeevikas/tcl_program/assets/3139438/3ccb6588-0087-4b5f-a376-24ff3ea8a854)
+
+![003](https://github.com/vikeevikas/tcl_program/assets/3139438/be40dea6-ada9-44b4-8792-49f10764dc72)
+
+![004](https://github.com/vikeevikas/tcl_program/assets/3139438/ec6b3d57-64e7-41f2-a35e-80acc1d4630d)
+
+![005](https://github.com/vikeevikas/tcl_program/assets/3139438/862beb03-81e5-4946-b0c8-baa3c6df9bb9)
+
+
+
 
 ------------------------------------------------------------------------
 Day 2: Variable Creation and Processing Constraints from CSV
