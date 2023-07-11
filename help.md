@@ -1,9 +1,11 @@
-
+https://www.vlsisystemdesign.com/tclworkshop/
+--------------------------------------------------
 
 1. Oracle VirtualBox
 
 2. VDI file 
   https://forgefunder.com/~kunal/TCLWorkshop.vdi
+--------------------------------------------------
 
 
 TCL Workshop: From Introduction to Advanced Scripting Techniques in Design and Synthesis
