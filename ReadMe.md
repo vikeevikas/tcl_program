@@ -86,40 +86,21 @@ Yosys synthesis tool usage and Memory functionality module RTL description, Hier
 
 
 ------------------------------------------------------------------------
-Day 5: Advanced Scripting Techniques and Quality of Results Generation
+5: Scripting Techniques and Quality of Results Generation
 ------------------------------------------------------------------------
 
-Section 10: Synthesis main file scripting and output file editing
-  Lecture 12: Synthesis script creation and demo
-  Lecture 13: Need and script to edit Yosys output netlist
-  Lecture 14: Demo to edit output netlist and Introduction to 'procs'
-Section 11: World of 'Procs'
-  Lecture 15: Redirect stdout proc and demo of TCL array command
-  Lecture 16: 'set_multi_cpu_usage' proc
-  Lecture 17: Demo for 'set_multi_cpu_usage' proc
-  Lecture 18: read_lib and read_verilog proc demo
-Section 12: read_sdc proc - interpret clock generation constraints
-  Lecture 19: Read SDC file and replace square brackets by 'null'
-  Lecture 20: Evaluate clock period and clock port name from processed SDC
-  Lecture 21: Evaluate duty cycle and create clock in opentimer format
-  Lecture 22: Demo to convert constraints from SDC format to opentimer format
-Section 13: read_sdc proc - interpret IO delays and transition constraints
-  Lecture 23: Grep clock latency and port name from SDC file
-  Lecture 24: Convert set_clock_latency SDC to opentimer format
-  Lecture 25: Demo to convert set_clock_latency in SDC to arrival_time in opentimer
-  Lecture 26: Script and demo convert transition and input delay to opentimer format
-  Lecture 27: Script and demo to convert output SDC constraints to opentimer format
-Section 14: Process bussed ports and configuration file creation
-  Lecture 28: Script to expand bussed input ports for arrival time constraints
-  Lecture 29: Script and demo to convert all bussed constraints to bit-blasted
-  Lecture 30: Opentimer configuration file creation
-  Section 15: Quality of results (QOR) generation algorithm
-  Lecture 31: Script to obtain STA runtime
-  Lecture 32: Script to obtain WNS and FEP for reg2out violations
-  Lecture 33: Script and demo for instance count, WNS, and FEP for setup and hold
-  Lecture 34: Script and demo for report formatting
-Section 16: Conclusion
-  Lecture 35: Conclusion and acknowledgments
+Synthesis main file scripting and output file editing
+  
+
+![Screenshot from 2023-07-11 09-36-04](https://github.com/vikeevikas/tcl_program/assets/3139438/4bf87ea7-64de-49f7-965e-ce3f99f4ee0b)
+
+
+![Screenshot from 2023-07-11 09-36-59](https://github.com/vikeevikas/tcl_program/assets/3139438/ad708145-d487-494e-bbc1-80c13374cf95)
+
+
+![Screenshot from 2023-07-11 19-41-29](https://github.com/vikeevikas/tcl_program/assets/3139438/4982c68e-5afc-4582-91d8-6b19b86cc1c8)
+
+
 
 -----------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------
